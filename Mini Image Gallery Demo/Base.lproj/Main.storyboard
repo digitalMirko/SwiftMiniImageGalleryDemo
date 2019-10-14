@@ -24,8 +24,8 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image1" translatesAutoresizingMaskIntoConstraints="NO" id="4xZ-rw-n0U">
-                                <rect key="frame" x="16" y="57" width="343" height="467.00000000000091"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image1" translatesAutoresizingMaskIntoConstraints="NO" id="4xZ-rw-n0U">
+                                <rect key="frame" x="16" y="57" width="343" height="467"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Xlx-xM-LqA">
                                 <rect key="frame" x="16" y="597" width="343" height="50"/>
@@ -36,6 +36,9 @@
                                         <state key="normal" title="Back">
                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="backButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oFy-KH-cu2"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/9" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wUK-qC-dHi">
                                         <rect key="frame" x="117.5" y="0.0" width="108" height="50"/>
@@ -49,6 +52,9 @@
                                         <state key="normal" title="Next">
                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="nextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UM5-Xo-U5b"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -86,6 +92,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="backButtonLabel" destination="nqq-cb-OiK" id="m8W-5d-nf9"/>
+                        <outlet property="countLbl" destination="wUK-qC-dHi" id="fGq-2D-H1q"/>
+                        <outlet property="largeImage" destination="4xZ-rw-n0U" id="XL4-Fx-j9z"/>
+                        <outlet property="locationLbl" destination="0vp-vX-c2h" id="2y3-EO-vfh"/>
+                        <outlet property="nextButtonLabel" destination="Cto-AI-KRD" id="EGm-St-F4e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
